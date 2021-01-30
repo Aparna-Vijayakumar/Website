@@ -36,3 +36,5 @@ export default function AchievementCard({ cardInfo, isDark }) {
     </div>
   );
 }
+
+//
