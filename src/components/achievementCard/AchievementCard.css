@@ -11,7 +11,7 @@
     margin: 15px 0 0 0;
 }
 .card-subtitle {
-    color: #666666;
+    color: #361F27;
     font-size: 17px;
     line-height: 1.5rem;
 }
@@ -20,6 +20,8 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
     padding: 1.5rem;
     border-radius: 10px;
+    flex: 1;
+    margin: 10px;
     border: 1px solid rgba(211, 211, 211, 0.397);
 }
 .certificate-detail-div {
@@ -34,19 +36,36 @@ text-align: center;
     overflow: hidden;
     text-align: center;
 }
-.achievement-cards-div {
+/*.achievement-cards-div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem 1rem;
+}*/
+
+.ReactCollapse--collapse {
+    transition: height 500ms;
+  }
+
+.achievement-cards-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
+
 .certificate-card-footer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.certificate-card-footer .card-actions:last-of-type{
+    margin-top: auto;
+    margin-left: auto;
+}
 .certificate-card-footer span.certificate-tag {
-    background: #55198b;
+    background: #521945;
     color: #f5f2f4;
     vertical-align: middle;
     align-items: center;
@@ -63,5 +82,17 @@ text-align: center;
     transition: 0.20s ease-in;
 }
 span.certificate-tag:hover {
-    background: #8c43ce;
+    background: #912F56;
 }
+.MuiCollapse-container {
+    width: 0px;
+   transition-property: width;
+  }
+  
+  .MuiCollapse-entered {
+    width: 100%
+  }
+  
+  .MuiCollapse-hidden {
+    width: 0px
+  }

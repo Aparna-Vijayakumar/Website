@@ -13,7 +13,7 @@ const greeting = {
   /* Your Summary And Greeting Section */
   username: "Aparna Vijayakumar",
   title: "Hi. I'm Aparna",
-  subTitle: "A Computer Science graduate student at University of Massachusetts, Amherst, pursuing a concentration in Data Science. An AI enthusiast, with experience in building deep learning, machine learning and natural language processing models.",
+  subTitle: "An ardent developer, passionate about using technology to solve real-world problems. An AI enthusiast, with experience in building deep learning, machine learning and natural language processing models.",
   resumeLink: "https://drive.google.com/file/d/1g5El0AOfjVOBS3IMIu4CV-TbtgRy06_T/view?usp=sharing"
 };
 
@@ -165,7 +165,7 @@ const techStack = {
       bgcolor : "#aaa5ff"
     },
     {
-      Stack: "Object Oriented Programming",  //Insert stack or technology you have experience in
+      Stack: "OOP",  //Insert stack or technology you have experience in
       progressPercentage: 4,  //Insert relative proficiency in percentage
       bgcolor : "#aaa5ff"
     },
@@ -184,6 +184,24 @@ const techStack = {
       progressPercentage: 4,  //Insert relative proficiency in percentage
       bgcolor : "#aaa5ff"
     },
+
+    {
+      Stack: "HTML",
+      progressPercentage: 4,  //Insert relative proficiency in percentage
+      bgcolor : "#aaa5ff"
+    },
+
+    {
+      Stack: "CSS",
+      progressPercentage: 4,  //Insert relative proficiency in percentage
+      bgcolor : "#aaa5ff"
+    },
+
+    {
+      Stack: "ReactJS",
+      progressPercentage: 3.5,
+      bgcolor : "#aaa5ff"
+    },
     
     {
       Stack: "Linux",
@@ -191,16 +209,7 @@ const techStack = {
       bgcolor : "#aaa5ff"
     },
     
-    {
-      Stack: "HTML",
-      progressPercentage: 3.5,  //Insert relative proficiency in percentage
-      bgcolor : "#aaa5ff"
-    },
-    {
-      Stack: "CSS",
-      progressPercentage: 3.5,  //Insert relative proficiency in percentage
-      bgcolor : "#aaa5ff"
-    },
+    
     {
       Stack: "Tableau",
       progressPercentage: 3.5,  //Insert relative proficiency in percentage
@@ -233,6 +242,7 @@ const techStack = {
       progressPercentage: 2,  //Insert relative proficiency in percentage
       bgcolor : "#aaa5ff"
     },
+    
   ]
 };
 
@@ -287,6 +297,73 @@ const openSource = {
 
 
 // Some Big Projects You have worked with your company
+const projectInfo = {
+  display: true, // Set false to hide this section, defaults to true
+  projects: [[{
+      projectName: 'Sentiment Analysis',
+      image: require('./assets/images/sentiment-analysis.jpg'),
+      description: 'Cleaned and tokenized the Amazon Review dataset. Used Logistic Regression to predict the sentiment of reviews. \
+      Achieved an accuracy of 99.7% and F-1 Score of 0.99.',
+      technologies: ['Machine Learning', 'Data Cleaning', 'Sci-kit Learn', 'Pandas', 'Logistic Regression'],
+      report: 'https://drive.google.com/file/d/1XhVg1uKICDI8qX42hdl600PWD7SQTphB/view?usp=sharing',
+      github: 'https://github.com/Aparna-Vijayakumar/Sentiment-Analysis'
+    },
+    {
+      projectName: 'Automatic Database Management through Machine Learning',
+      image: require('./assets/images/dbms.png'),
+      description: 'Automated the tuning of configuration knobs of DBMS. Used Factor Analysis and K-Means clustering \
+      to retain useful metrics. Predicted latency using Gaussian Process Regression and obtained Mean \
+      Absolute Percentage Error of 36.14%.',
+      technologies: ['DBMS', 'Machine Learning', 'Clustering', 'Dimensionality Reduction'],
+      report: 'https://drive.google.com/file/d/1_CQvGyMrrjRFVkLOCEjStyQX9IXNS81H/view?usp=sharing',
+      github: 'https://github.com/Aparna-Vijayakumar/Automatic-Database-Tuning-Through-Large-scale-Machine-Learning'
+    },
+    {
+      projectName: 'Analysis of Seq2Seq Models for Abstractive Text Summarization',
+      image: require('./assets/images/summary.jpg'),
+      description: 'Compared the performance of LSTM, Transformer Networks and Pointer Generator Networks for \
+      Abstractive text summarization. Obtained best ROUGE score of 0.34.',
+      technologies: ['Natural Language Processing', 'Deep Learning', 'PyTorch', 'HuggingFace', 'Python'],
+      report: 'https://drive.google.com/file/d/1xKRarTysg_JYk7B5mmazdRAiL8huSe-4/view?usp=sharing',
+      github: 'https://github.com/Aparna-Vijayakumar/Text-Summarization'
+    }],
+    [{
+      projectName: 'Analysis of College Donations',
+      image: require('./assets/images/donation.jpg'),
+      description: 'Analysed the donations made by students to universities across the US. Gained insight about the distribution of \
+      donations by location, college type, academic major, and donation trends over the years using data visualization in Tablaeu.',
+      technologies: ['Tableau', 'Microsoft Excel', 'Data Analysis'],
+      report: 'https://drive.google.com/file/d/1QZTqrDlKE9Iwn6YYzpejz4cG8chJbvap/view?usp=sharing',
+      github: 'https://github.com/Aparna-Vijayakumar/College-Donations-Analysis'
+    },
+    {projectName: 'Hackathon Visualization Dashboard',
+      image: require('./assets/images/hack.jfif'),
+      description: 'An infographic dashboard representing different characteristics of the hackathon participants such \
+      as their major, skills, and university. This dashboard was used by the organizing committee to decide which workshops to host so as \
+      to benefit the most number of students.',
+      technologies: ['Data Visualization', 'Web Dev', 'D3.js'],
+      report: 'https://docs.google.com/presentation/d/1aUrqlWwyT53WEFztIe7fQPG7D2Yao1qdA5CmlNoTqGU/edit?usp=sharing',
+      github: 'https://github.com/nilarami/590V-HackHer413'
+    },
+    {
+      projectName: 'Neural Style Transfer',
+      image: require('./assets/images/monalisa.jpg'),
+      description: 'Used cycle-consistent Generative Adevrsarial Network and Convolutional Neural Network to transfer the unique style of Pablo Picasso onto a set of day-to-day images.',
+      technologies: ['Deep Learning', 'Convolutional Neural Networks','Generative Adversarial Networks', 'TensorFLow'],
+      report: 'https://drive.google.com/file/d/1XfKVQbthy29IhTMTEsHXB5Vy5IEPuiz2/view?usp=sharing',
+      github: 'https://github.com/Aparna-Vijayakumar/Neural-Style-Transfer'
+    },
+    ],
+    [{
+      projectName: 'Classification of Breast Cancer using Convolutional Neural Networks',
+      image: require('./assets/images/breast.jpg'),
+      description: 'Compared the image classification performance of two CNN architectures Inception v3 and \
+      Inception-Resnet on BreaKHis data. Best accuracy of 95.6% was obtained.',
+      technologies: ['Python', 'Keras', 'Convolutional Neural Networks'],
+      report: 'https://docs.google.com/presentation/d/1ySOCoE9io7Dk6cdkzraU8J-8eWnJ_5_5LDwqI6H4XCc/edit?usp=sharing',
+      github: 'https://github.com/Aparna-Vijayakumar/Classification-of-Breast-Cancer'
+    }]]
+}
 
 const bigProjects = {
   title: "Projects",
@@ -305,11 +382,7 @@ const bigProjects = {
       link: "http://nextu.se/"
     },
     {
-      image: require("./assets/images/summary.png"),
-      link: "http://nextu.se/"
-    },
-    {
-      image: require("./assets/images/breastcancer.jpeg"),
+      image: require("./assets/images/summary.jpg"),
       link: "http://nextu.se/"
     },
     {
@@ -331,26 +404,35 @@ const achievementSection = {
       title: "Reading Comprehension as Natural Language Inference: A Semantic Analysis",
       subtitle: "*Anshuman Mishra, *Dhruvesh Patel , *Aparna Vijayakumar, Xiang Li, Pavan Kapanipathi, and Kartik Talamadupula",
       image: require("./assets/images/coling.png"),
+      abstract: "In the recent past, Natural language Inference (NLI) has gained significant attention, \
+      particularly given its promise for downstream NLP tasks. However, its true impact is limited and \
+      has not been well studied. Therefore, in this paper, we explore the utility of NLI for one \
+      of the most prominent downstream tasks, viz. Question Answering (QA). We transform one of the largest \
+      available MRC dataset (RACE) to an NLI form, and compare the performances \
+      of a state-of-the-art model (RoBERTa) on both these forms. We propose new characterizations of questions, \
+      and evaluate the performance of QA and NLI models on these categories. We highlight clear categories for which \
+      the model is able to perform better when the data is presented in a coherent entailment form, \
+      and a structured question-answer concatenation form, respectively.",
       footerLink: [
         { name: "Paper", url: "https://www.aclweb.org/anthology/2020.starsem-1.2.pdf" }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle: "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      footerLink: [{ name: "View Google Assistant Action", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en" }]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "Looking Beyond Sentence-Level Natural Language Inference for Downstream Tasks",
+      subtitle: "Anshuman Mishra, Dhruvesh Patel , Aparna Vijayakumar, Xiang Li, Pavan Kapanipathi, and Kartik Talamadupula",
+      image: require("./assets/images/naacl.jpg"),
+      abstract: "In recent years, the Natural Language Inference (NLI) task has garnered significant attention, with new datasets \
+      and models achieving near human-level performance on it. However, the full promise of NLI -- particularly that it learns \
+      knowledge that should be generalizable to other downstream NLP tasks -- has not been realized. In this paper, we study this \
+      unfulfilled promise from the lens of two downstream tasks: question answering (QA), and text summarization. We conjecture that a \
+      key difference between the NLI datasets and these downstream tasks concerns the length of the premise; and that creating new long \
+      premise NLI datasets out of existing QA datasets is a promising avenue for training a truly generalizable NLI model. We validate \
+      our conjecture by showing competitive results on the task of QA and obtaining the best reported results on the task of Checking \
+      Factual Correctness of Summaries.",
       footerLink: [
-        { name: "Certification", url: "" },
-        { name: "Final Project", url: "https://pakistan-olx-1.firebaseapp.com/" }
+        { name: "Paper", url: "https://arxiv.org/abs/2009.09099" }
       ]
-    }
+    },
   ]
 };
 
@@ -404,7 +486,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+18825870649",
+  number: "+1(857)800-2756",
   email_address: "avijayakumar@umass.edu"
 };
 
@@ -415,4 +497,4 @@ const twitterDetails = {
   userName : "twitter"//Replace "twitter" with your twitter username without @
   
 };
-export { illustration, greeting, socialMediaLinks, skillsSection, techStack, educationInfo, workExperiences, bigProjects, openSource, achievementSection, blogSection, talkSection, podcastSection, contactInfo , twitterDetails};
+export { illustration, greeting, socialMediaLinks, projectInfo, skillsSection, techStack, educationInfo, workExperiences, bigProjects, openSource, achievementSection, blogSection, talkSection, podcastSection, contactInfo , twitterDetails};

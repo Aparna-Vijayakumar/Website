@@ -21,11 +21,11 @@ export default function StackProgress() {
                     
                         
                             {techStack.experience.map((item, idx) => (
-                                <div style={{margin : "0px auto", height:"60px", overflow:"auto",display:"flex",
-                                justifyContent:"space-between"}}>
-                                    <label style={{flex:"1"}}>{item.Stack}</label>
-                                    <div style={{flex:"1"}}>
-                                    <ReactStars count={5} value={item.progressPercentage} activeColor="#aaa5ff" isHalf={true} edit={false} size={"25"}/>
+                                 <div className="skill-row" style={{margin : "0px auto", color:"#361f27", height:"60px",overflowX:"hidden",overflowY:"auto", display:"flex",
+                                 justifyContent:"space-between", alignItems:"center"}}>
+                                    <span style={{flex:"1"}}>{item.Stack}</span>
+                                    <div className="stars" align="right" style={{flex:"1",paddingLeft:"10%"}}>
+                                    <ReactStars count={5} value={item.progressPercentage} activeColor="#912f56" isHalf={true} edit={false} size={"25"}/>
                                     </div>
 
                                 </div>
@@ -49,19 +49,3 @@ export default function StackProgress() {
                             ))}
                     */
 
-/*
-{techStack.experience.map((item, idx) => (
-                                <div style={{margin : "0px auto", height:"60px", overflow:"auto",display:"flex",
-                                justifyContent:"space-between"}}>
-                                    <label style={{flex:"1"}}>{item.Stack}</label>
-                                    <div style={{flex:"1"}}>
-                                    {
-                                        arr.map((value, index) => {
-                                            return <span className="fas fa-star"></span>
-                                        })
-                                    }
-                                    </div>
-
-                                </div>
-                            ))}
-*/

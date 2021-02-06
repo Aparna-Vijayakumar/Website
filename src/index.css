@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Agustina Regular';
-  font-style: normal;
+  font-family: 'Calligraffitti';
+  font-style: cursive;
   font-weight: normal;
-  src: local('Agustina Regular'), url('./assets/fonts/Agustina.woff') format('woff');
+  src: local('Calligraffitti'), url('./assets/fonts/Calligraffitti-Regular.ttf') format('woff');
   font-display: swap;
 }
 @font-face {
@@ -17,6 +17,7 @@ code {
 html,
 body {
   scroll-behavior: smooth;
+  background-color: #fafafa;
 }
 body {
   margin: 0;

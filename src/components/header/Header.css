@@ -1,7 +1,7 @@
 /* header */
 
 .header {
-  background-color: #fff;
+  background-color: #521945;
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
@@ -14,19 +14,20 @@
   overflow: hidden;
 }
 .grey-color {
-  color: #868e96;
+  color: pink;
 }
 
 .header li a {
   display: block;
   padding: 20px 20px;
-  color: black;
+  color: white;
   text-decoration: none;
+  font-weight: 300;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  font-weight: bold;
 }
 
 .header .logo {
@@ -39,9 +40,10 @@
   line-height: normal;
 }
 .header .logo-name {
-  font-family: "Agustina Regular";
+  font-family: "Calligraffitti";
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
+  color: "#f76c5e";
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
 }

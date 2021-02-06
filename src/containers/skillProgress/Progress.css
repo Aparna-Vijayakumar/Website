@@ -37,11 +37,33 @@
 .skills-container > * {
     -moz-columns: 3;
     -webkit-columns: 3;
-    columns: 100px 3;
+    columns: 200px 3;
     flex: 1 1 auto;
     margin-bottom: 30px;
     -webkit-margin-before: 0;
   -webkit-margin-after: 0;
+}
+
+
+.skill-row{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.skill-row .stars{
+    transition: transform 0.3s ease-in-out;
+}
+.skill-row:hover {
+    font-weight: bold;
+}
+
+.skill-row:hover > .stars{
+    flex: 1.1;
+    transform: scale(1.2);
+    
 }
 .skills-image > img {
     margin-left: 80px;

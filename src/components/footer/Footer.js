@@ -5,16 +5,16 @@ import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Footer() {
-  const { isDark } = useContext(StyleContext);
+  const { isDark } = false; //useContext(StyleContext);
   return (
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          {emoji("Made with ❤️ by Aparna Vijayakumar")}
+          {emoji("Made with ❤️ by Aparna")}
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Theme by{" "}
-          <a href="https://github.com/saadpasta/developerFolio">
+          Theme based on{" "}
+          <a href="https://github.com/saadpasta/developerFolio"  style={{color:"grey"}}>
             developerFolio
           </a>
         </p>

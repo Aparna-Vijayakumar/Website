@@ -8,28 +8,21 @@ import DisplayLottie from '../../components/displayLottie/DisplayLottie';
 import StyleContext from '../../contexts/StyleContext';
 
 export default function Contact() {
-  const { isDark } = useContext(StyleContext);
+  // { isDark } = useContext(StyleContext);
+  const isDark = false; // remember to remove TODO
+  console.log(isDark)
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
             <h1 className="heading contact-title">{contactInfo.title}</h1>
-            <p
-              className={
-                isDark
-                  ? 'dark-mode contact-subtitle'
-                  : 'subTitle contact-subtitle'
-              }
-            >
-              {contactInfo.subtitle}
-            </p>
             <div
               className={
                 isDark ? 'dark-mode contact-text-div' : 'contact-text-div'
               }
             >
-              <a className="contact-detail" href={'tel:' + contactInfo.number}>
+              <a className="contact-detail" href={'tel:' + contactInfo.number} style={{color:"#000"}}>
                 {contactInfo.number}
               </a>
               <br />
@@ -37,7 +30,7 @@ export default function Contact() {
               <a
                 className="contact-detail-email"
                 href={'mailto:' + contactInfo.email_address}
-              >
+                style={{color:"#000"}}>
                 {contactInfo.email_address}
               </a>
               <br />
