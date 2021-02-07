@@ -21,11 +21,11 @@ export default function StackProgress() {
                     
                         
                             {techStack.experience.map((item, idx) => (
-                                 <div className="skill-row" style={{margin : "0px auto", color:"#361f27", height:"60px",overflowX:"hidden",overflowY:"auto", display:"flex",
+                                 <div className="skill-row" style={{margin : "0px auto", color:"#361f27", height:"65px",overflowX:"hidden",overflowY:"auto", display:"flex",
                                  justifyContent:"space-between", alignItems:"center"}}>
                                     <span style={{flex:"1"}}>{item.Stack}</span>
                                     <div className="stars" align="right" style={{flex:"1",paddingLeft:"10%"}}>
-                                    <ReactStars count={5} value={item.progressPercentage} activeColor="#912f56" isHalf={true} edit={false} size={"25"}/>
+                                    <ReactStars count={5} value={item.progressPercentage} activeColor="#912f56" isHalf={true} edit={false} size={"21"}/>
                                     </div>
 
                                 </div>

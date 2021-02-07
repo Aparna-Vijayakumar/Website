@@ -1,3 +1,13 @@
+.achievement-cards-div{
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .achievement-heading {
   font-size: 56px;
   font-weight: 400;
@@ -9,10 +19,17 @@
   margin: 0px;
   margin-bottom: 50px;
 }
+
 /* Media Query */
 @media (max-width: 1380px) {
   .achievement-heading {
     font-size: 40px;
+  }
+
+  .achievement-cards-div{
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -23,6 +40,12 @@
   .achievement-subtitle {
     font-size: 16px;
     line-height: normal;
+    text-align: center;
+  }
+
+  .achievement-cards-div{
+    -webkit-flex-direction: column;
+    flex-direction: column;
     text-align: center;
   }
 }

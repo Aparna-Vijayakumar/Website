@@ -7,7 +7,7 @@ import StyleContext from '../../contexts/StyleContext';
 
 function Header() {
   const exp = workExperiences.viewExperiences;
-  const { isDark } = useContext(StyleContext);
+  const { isDark } = true;//useContext(StyleContext);
   return (
     <Headroom>
       <header className={isDark ? 'dark-menu header' : 'header'}>

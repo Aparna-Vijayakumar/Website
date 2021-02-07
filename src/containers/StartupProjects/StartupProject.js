@@ -36,14 +36,15 @@ export default function StartupProject() {
   }
 
   return (
-    <Fade bottom duration={1000} distance="5px">
+    //<Fade bottom duration={500} distance="5px">
       <div className={classes.root} id="projects">
       <h1 className="project-heading" style={{width :"90%", margin :"0px auto", paddingLeft : "10px"}}>Projects</h1>
       <Grid container spacing={0} justify="space-around" direction="column" alignItems="stretch">{//GcC0
       }
       {projectInfo.projects.map((project_row,ind) => (
         <div key={ind}>
-          <Grid container
+          <Grid container item
+            className = "grid-cont"
             direction="row"
             justify="center"
             spacing={0}
@@ -54,7 +55,7 @@ export default function StartupProject() {
       ))}
       </Grid>
     </div>
-    </Fade>
+    //</Fade>
   );
 }
 
