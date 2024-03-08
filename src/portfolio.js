@@ -13,7 +13,7 @@ const greeting = {
   /* Your Summary And Greeting Section */
   username: "Aparna Vijayakumar",
   title: "Hi. I'm Aparna",
-  subTitle: "An ardent developer, passionate about using technology to solve real-world problems. An AI enthusiast, with experience in building deep learning, machine learning and natural language processing models.",
+  subTitle: "Data Scientist with 3+ years of industry experience in analyzing complex datasets and developing data-driven solutions. Proficient in Python and Power BI with a strong background in machine learning and a proven track record of delivering actionable insights from large datasets. Achieved a 4% increase in customer retention rate through the implementation of a personalized recommendation system at JCI",
   resumeLink: "https://drive.google.com/file/d/1g5El0AOfjVOBS3IMIu4CV-TbtgRy06_T/view?usp=sharing"
 };
 
